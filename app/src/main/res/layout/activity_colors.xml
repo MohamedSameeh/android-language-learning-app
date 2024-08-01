@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".colors_activity">
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/backgroundimage" />
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/white_btn_colors"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:backgroundTint="#E2FFFFFF"
+            android:gravity="center"
+            android:text="White"
+            android:textColor="@color/black"
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/black_btn_colors"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:backgroundTint="@color/black"
+            android:gravity="center"
+            android:text="Black"
+            android:textColor="@color/white"
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/blue_btn_colors"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:backgroundTint="#0A22A3"
+            android:gravity="center"
+            android:text="Blue"
+            android:textColor="@color/white"
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/red_btn_colors"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:backgroundTint="#CA1111"
+            android:gravity="center"
+            android:text="Red"
+            android:textColor="@color/white"
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/green_btn_colors"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:backgroundTint="#1AC621"
+            android:gravity="center"
+            android:text="Green"
+            android:textColor="@color/white"
+            android:textSize="30sp" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
